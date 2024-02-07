@@ -91,7 +91,6 @@ function monthlySavings(arr, livingCost) {
     for (const eachNetIncome of netIncome) {
         totalIncome = totalIncome + eachNetIncome;
     }
-
     const savings = totalIncome - livingCost;
     if (savings >= 0) {
         return savings;
