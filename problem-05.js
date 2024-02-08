@@ -22,10 +22,17 @@ function monthlySavings(arr, livingCost) {
         return savings;
     }
     else if(savings<0){
-        return "earn more"
+        return "“earn more”"
     }
 }
 
-const arr = [1000, 2000, 2500]
-const livingCost = 5000;
-console.log(monthlySavings(arr, livingCost))
+
+///Checking Part (OnlyMe)
+const arr = [1000, 2000, 3000], livingCost = 5400;
+const arr2 = [1000, 2000, 2500], livingCost2 = 5000;
+const arr3 = [900, 2700, 3400], livingCost3 = 10000;
+const arr4 = 100, livingCost4 = [900, 2700, 3400];
+console.log(1.,monthlySavings(arr, livingCost))
+console.log(2.,monthlySavings(arr2, livingCost2))
+console.log(3., monthlySavings(arr3, livingCost3))
+console.log(4.,monthlySavings(arr4, livingCost4))

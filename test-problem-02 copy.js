@@ -1,5 +1,5 @@
 function checkName(name) {
-    if(typeof name !== 'string'){
+    if(typeof name !== 'string' || !isNaN(name)){
         return "invalid";
     }
     const givenLastLetterShould = 'A,y,i,e,o,u,w'
@@ -16,11 +16,10 @@ function checkName(name) {
 }
 
 
-///Checking Part (OnlyMe)
 const name = "Salman";
 const name2 = "RAFEE";
 const name3 = "Jhankar";
-const name4 = 199;
+const name4 = '199';
 const name5 = ["Rashed"];
 console.log(1., checkName(name));
 console.log(2., checkName(name2));
